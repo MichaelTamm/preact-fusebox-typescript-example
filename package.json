@@ -1,0 +1,27 @@
+{
+  "name": "preact-fusebox-typescript-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Michael Tamm",
+  "dependencies": {
+    "preact": "^8.2.5",
+    "tslib": "^1.8.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^4.0.2",
+    "fuse-box": "^2.3.3",
+    "fuse-box-typechecker": "git://github.com/fuse-box/fuse-box-typechecker.git",
+    "prettier": "^1.7.4",
+    "tslint": "^5.7.0",
+    "tslint-config-prettier": "^1.5.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.5.3",
+    "uglify-js": "^3.1.4"
+  },
+  "scripts": {
+    "prettier": "node_modules/.bin/prettier --write 'src/**/*.{ts,tsx}'",
+    "build": "node fuse.prod",
+    "dev-server": "node fuse.dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
